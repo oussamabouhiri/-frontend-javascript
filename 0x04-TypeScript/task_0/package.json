@@ -1,1 +1,23 @@
+{
+  "name": "task_0",
+  "version": "1.0.0",
+  "description": "TypeScript Task 0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && webpack",
+    "start": "webpack-dev-server --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.6.4",
+    "ts-loader": "^6.2.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "eslint": "^6.6.0"
+  }
+}
 
