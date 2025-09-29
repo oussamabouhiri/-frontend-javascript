@@ -1,1 +1,17 @@
+{
+  "name": "task_3",
+  "version": "1.0.0",
+  "description": "TypeScript Task 3 - Student CRUD",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "ts-loader": "^9.5.1"
+  }
+}
 
