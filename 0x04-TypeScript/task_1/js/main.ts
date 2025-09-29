@@ -1,35 +1,23 @@
-interface Student {
-  firstName: string;
-  lastName: string;
-  age: number;
+// task_1/js/main.ts
+
+interface Teacher {
+  readonly firstName: string;
+  readonly lastName: string;
+  fullTimeEmployee: boolean;
+  yearsOfExperience?: number;
   location: string;
+  [key: string]: any; // allow additional properties like contract: boolean
 }
 
-const student1: Student = {
-  firstName: "Alice",
-  lastName: "Smith",
-  age: 20,
-  location: "Paris"
+const teacher3: Teacher = {
+  firstName: 'John',
+  lastName: 'Doe',
+  fullTimeEmployee: false,
+  location: 'London',
+  contract: false,
 };
 
-const student2: Student = {
-  firstName: "Bob",
-  lastName: "Johnson",
-  age: 22,
-  location: "London"
-};
+console.log(teacher3);
 
-const studentsList: Student[] = [student1, student2];
-
-// Render a table
-const table = document.createElement("table");
-document.body.appendChild(table);
-
-studentsList.forEach((student) => {
-  const row = table.insertRow();
-  const nameCell = row.insertCell();
-  const locationCell = row.insertCell();
-  nameCell.textContent = student.firstName;
-  locationCell.textContent = student.location;
-});
-
+// The following line would produce a TypeScript error because firstName is readonly:
+// teacher3.firstName = 'Jane';
